@@ -1,0 +1,12 @@
+.prc-content{
+    background-color: aqua;
+    width: 100vh;
+    height: 70vh;
+    margin-top: 70px;
+    padding: 30px;
+}
+
+.mensajes{
+    /* background-color: yellow; */
+    margin-top: 230px;
+}

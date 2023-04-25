@@ -1,0 +1,33 @@
+{% extends './layout.html' %}
+
+{% block title %}HOME{%endblock %}
+
+{% block CustomCss %}
+<link rel="stylesheet" href="{{ url_for('static', filename='Css/home.css') }}" />
+{% endblock %}
+
+
+{%block body%}
+<div class="container-fluid prc-content">
+    <div class="row">
+        <h4 class="text-center">EXAMPLE SOCKET</h4>
+        <div id="root"></div>
+
+        <div class="content-chats">
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn btn-primary" id="join">Ingresar</button>
+            </div>
+        </div>
+    </div>
+    <div class="mensajes p-4">
+        <div class="d-flex align-items-center flex-column" style="height: 150px;">
+            <div class="mt-auto p-2">
+                <form id="form-message" action="">
+                    <input id="message-input" type="text" />
+                    <button id="send-message" type="button">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
